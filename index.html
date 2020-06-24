@@ -1,0 +1,126 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Suneetha Kori | Web Developer</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        $(document).ready(function () {
+            $('.js-scrollTo').on('click', function () { // Au clic sur un élément
+                var page = $(this).attr('href'); // Page cible
+                var speed = 750; // Durée de l'animation (en ms)
+                $('html, body').animate({ scrollTop: $(page).offset().top }, speed); // Go
+                return false;
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a class="js-scrollTo" href="#home">Home</a></li>
+                <li><a class="js-scrollTo" href="#about_me">About Me</a></li>
+                <li><a class="js-scrollTo" href="#portfolio">Portfolio</a></li>
+                <li><a class="js-scrollTo" href="#Contact">Contact</a></li>
+            </ul>
+            <div class="Logo">
+                <img src="./Logo1.png">
+            </div>
+
+        </nav>
+        <section id="home">
+            <div class="hero">
+                <h1 class="Title">Suneetha Kori</h1>
+                <h1 class="Subtitle">Web Developer</h1>
+            </div>
+        </section>
+    </header>
+
+
+    <section id="about_me">
+        <div class="Container">
+            <h2>About me</h2>
+            <p> Energetic software developer who is committed to create and develop full stack web applications.
+                Experienced in working with diverse teams and collaborating across teams for a successful
+                product/service implementation. I have created and maintained the web sites for various Austin Community
+                College departments using WordPress. Created the new websites and migrated content from the existing
+                static sites. Designed the look and feel and developed responsive websites. The web sites feature the
+                latest design elements such as responsiveness, social media integration, slideshows, event management
+                and calendar integration. I have completed the Full stack web development course from Austin Coding
+                Academy. </p>
+            <div class="profil"></div>
+
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <div class="Container">
+            <h2>Portfolio</h2>
+            <ul>
+                <li>
+                    <a href="https://suneethaykori.github.io/Checkpoint3/" target="_blank">
+                        <div class="info">
+                            <p>A Weather App</p>
+                        </div>
+                        <img src="./clouds-149344_1280.png" width="638" height="311">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://suneethaykori.github.io/BBuilderforms/" target="_blank">
+                        <div class="info">
+                            <p>Burger Builder Application</p>
+                        </div>
+                        <img src="./Burger.PNG" width="638" height="311">
+                    </a>
+                </li>
+                <!-- 
+                <li>
+                    <div class="info">
+                        <p>Redesign of the instagram website</p>
+                    </div>
+                    <img src="https://image.ibb.co/fats0Q/Rectangle_3_1.jpg">
+                </li>
+
+                <li>
+                    <div class="info">
+                        <p>A prototype of a to-do-list </p>
+                    </div>
+                    <img src="https://image.ibb.co/ccdQLQ/Rectangle_3.png">
+                </li> -->
+                <li>
+                    <a href="https://suneethaykori.github.io/wp-portfolio/" target="_blank">
+                        <div class="info">
+                            <p>WrodPress Portfolio </p>
+                        </div>
+                        <img src="./wordpress.png" width="638" height="311">
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </section>
+
+    <section id="Contact">
+        <div class="Container">
+            <h2>CONTACT ME</h2>
+            <form>
+                <input type="text" placeholder="Your name..."><br>
+                <input type="email" placeholder="Your email..."><br>
+                <textarea name="comment" form="usrform" placeholder="Message..."></textarea><br>
+                <input type="submit" value="Submit"><br>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="Container">
+            <p>Copyright 2020 Suneetha Kori</p>
+        </div>
+    </footer>
+</body>
+
+</html>
