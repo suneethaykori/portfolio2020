@@ -145,6 +145,10 @@ body{
         position: relative;
         overflow: hidden;
     }
+    li img{
+        width : 638px;
+        height: 311px;
+    }
     /*-------------Animate portfolio-------------*/
     .info{
         background-color: rgba(25,21,21,.8);
@@ -238,18 +242,22 @@ body{
     .Logo{
         height: 50%;
     }
+    .Title {
+        padding-top: 10px;
+        margin-top: 90px;
+    }
     header{
         height: 300px;
         background-size: contain;
     }
     .hero h1{
-        font-size: 20px;
+        font-size: 40px;
     }
     .hero {
         top: 0;
     }
     h2{
-        font-size: 40px;
+        font-size: 30px;
         margin-top: 50px;
     }
     .profil{
@@ -264,12 +272,18 @@ body{
     }
     #about_me p{
         display: inline-block;
+        width: 90%;
+        /* margin-left:50%;
+        padding-top: 50%; */
+        margin:auto;
+        display: inline-block;
         width: 100%;
-        margin-left:50%;
-        padding-top: 50%;
+        color: #999999;
+        font-size: 15pt;
+
     }
     #about_me{
-        height: 720px;
+        height: 450px;
     }
     #portfolio ul{
         margin-bottom: 10%;
@@ -278,10 +292,16 @@ body{
     }
     #portfolio li{
         display: inline-block;
-        
     }
+    li img{
+        width : 80%;
+        height: 300px;
+        margin: auto;
+        margin-left: 10%;
+    }
+
     input[type=text]{
-    width:500px;
+        width:500px;
         margin-bottom: 40px;
         height: 75px;
         border: none;
@@ -292,7 +312,7 @@ body{
     }
     
     input[type=email]{
-    width: 500px;
+        width: 500px;
         border: none;
         height: 75px;
         margin-bottom: 40px;
@@ -314,5 +334,22 @@ body{
     }
     input[type=submit]{
         width: 300px;
+    }
+}
+
+/* @media screen and (max-width: 1060px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}  
+}
+
+@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+}  */
+
+/*css added on july 30th */
+@media (max-width:960px){
+    .container {
+        width: auto;
     }
 }
